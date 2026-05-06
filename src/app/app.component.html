@@ -2,7 +2,22 @@
 <main>
     <ul id="usuarios">
         <li>
-            <app-usuario></app-usuario>
+            <app-usuario [id]="usaurios[0].id" [avatar]="usaurios[0].avatar" [nombre]="usaurios[0].nombre"
+                (seleccion)="seleccionUsuario($event)">
+            </app-usuario>
+        </li>
+        <li>
+            <app-usuario [id]="usaurios[1].id" [avatar]="usaurios[1].avatar" [nombre]="usaurios[1].nombre"
+                (seleccion)="seleccionUsuario($event)"></app-usuario>
+        </li>
+        <li>
+            <app-usuario [id]="usaurios[2].id" [avatar]="usaurios[2].avatar" [nombre]="usaurios[2].nombre"
+                (seleccion)="seleccionUsuario($event)"></app-usuario>
+        </li>
+        <li>
+            <app-usuario [id]="usaurios[3].id" [avatar]="usaurios[3].avatar" [nombre]="usaurios[3].nombre"
+                (seleccion)="seleccionUsuario($event)"></app-usuario>
         </li>
     </ul>
+    TAREAS DE USUARIO
 </main>
